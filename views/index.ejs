@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        #main {
+            background-color: black;
+            color: white;
+              width: 300px;
+            padding: 20px;   }
+    </style>
+</head>
+<body>
+
+    <h1>All chats</h1>
+    <form method="GET" action="/chats/new">
+        <button>New Chat</button>
+    </form>
+    <% for(let chat of chats) { %>
+        <div id="main">
+            <p>From: <%= chat.from %></p>
+            <p>From: <%= chat.to%></p>
+            <p>From: <%= chat.msg %></p>
+
+        </div>
+        <hr>
+    <%}%>)
+    
+</body>
+</html>
